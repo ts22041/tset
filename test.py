@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pydeck as pdk
-import random
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 districts_data = {
         "구": ["강남구", "서초구", "동작구", "은평구", "노원구", "강동구", "강북구", "강서구",
