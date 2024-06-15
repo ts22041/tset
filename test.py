@@ -184,7 +184,7 @@ def page_home():
     st.write('4.7. 서울특별시장 선거 결과 상대적 우세 지역')
 
     with st.sidebar:
-        st.title("데이터 분석 결과 해석")
+        st.title("데이터 분석")
         if st.button("구별 투표율, 평균 연령, 후보자별 득표율"):
             st.session_state.page = 'Page1'
             st.experimental_rerun()
@@ -194,13 +194,13 @@ def page_home():
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
             st.experimental_rerun()
-        if st.button("승민이의 생각"):
+        if st.button("데이터 분석 결과 해석"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
 
 def page_1():
     with st.sidebar:
-        st.title("데이터 분석 결과 해석")
+        st.title("데이터 분석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -213,7 +213,7 @@ def page_1():
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
             st.experimental_rerun()
-        if st.button("승민이의 생각"):
+        if st.button("데이터 분석 결과 해석"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
 
@@ -224,7 +224,7 @@ def page_1():
 
 def page_2():
     with st.sidebar:
-        st.title("데이터 분석 결과 해석")
+        st.title("데이터 분석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -237,7 +237,7 @@ def page_2():
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
             st.experimental_rerun()
-        if st.button("승민이의 생각"):
+        if st.button("데이터 분석 결과 해석"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
 
@@ -252,7 +252,7 @@ def page_2():
 
 def page_3():
     with st.sidebar:
-        st.title("데이터 분석 결과 해석")
+        st.title("데이터 분석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -265,7 +265,7 @@ def page_3():
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
             st.experimental_rerun()
-        if st.button("승민이의 생각"):
+        if st.button("데이터 분석 결과 해석"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
 
@@ -307,7 +307,7 @@ def page_3():
 
 def page_4():
     with st.sidebar:
-        st.title("데이터 분석 결과 해석")
+        st.title("데이터 분석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -320,11 +320,11 @@ def page_4():
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
             st.experimental_rerun()
-        if st.button("승민이의 생각"):
+        if st.button("데이터 분석 결과 해석"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
 
-    st.title('승민이의 생각')
+    st.title('4.7. 서울특별시장 보궐선거 데이터 분석 결과 해석')
     st.subheader('4.7. 하기 시러ㅓ')
     st.write('-'*50)
     st.write('서울특별시 내 구별 평균연령에 따른 득표율을 분석한 결과 예상과 다르게 평균 연령이 높을수록 진보 성향을 띄며 낮을수록 보수 성향을 띈다는 결과가 나왔다. 이와 같은 결과를 3가지 요인으로 해석할 수 있다. 첫째, 서울특별시 내 평균 연령 차이의 최대가 5살 정도로 대체로 평균 연령이 비슷해 나이 요인이 영향을 크게 주지 못했을 수 있다. 둘째, 경제적인 영향이 커서 평균 연령과 같은 영향을 덮을 수 있다. 오세훈 후보의 최대 득표율 지역 5개는 강남구, 서초구, 송파구, 용산구, 성동구로 모두 집값이 높고 부유한 사람들이 많이 살기로 유명한 지역들이다. 반면 박영선 후보의 최대 득표율 지역 5개 강북구, 금천구, 은평구, 광진구, 구로구는 서울특별시 내에서는 경제적인 수준이 높지 않다. 따라서 연령에 따른 영향 보다는 세금 등 경제적인 정책이 정치적 성향에 더 많은 영향을 끼친다고는 것을 알 수 있다. 마지막으로,4.7. 서울시장 보권선거에서는 스윙보터 성향을 띄는 20,30 세대가 보수를 지지하면서 평균 연령에 따른 정치적 성향이 희석되거나 역전되었을 수 있다.')
