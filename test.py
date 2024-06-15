@@ -323,7 +323,7 @@ def page_4():
         if st.button("승민이의 생각"):
             st.session_state.page = 'Page4'
             st.experimental_rerun()
-            
+
     st.title('승민이의 생각')
     st.subheader('4.7. 하기 시러ㅓ')
     st.write('-'*50)
@@ -343,3 +343,5 @@ elif st.session_state.page == 'Page2':
     page_2()
 elif st.session_state.page == 'Page3':
     page_3()
+elif st.session_state.page == 'Page4':
+    page_4()
