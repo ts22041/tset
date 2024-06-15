@@ -191,8 +191,11 @@ def page_home():
         if st.button("평균 연령에 따른 득표율 산점도 및 추세선"):
             st.session_state.page = 'Page2'
             st.experimental_rerun()
-        if st.button("성적 분석(결론)"):
+        if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
+            st.experimental_rerun()
+        if st.button("승민이의 생각"):
+            st.session_state.page = 'Page4'
             st.experimental_rerun()
 
 def page_1():
@@ -209,6 +212,9 @@ def page_1():
             st.experimental_rerun()
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
+            st.experimental_rerun()
+        if st.button("승민이의 생각"):
+            st.session_state.page = 'Page4'
             st.experimental_rerun()
 
     st.title('서울특별시 내 구별 투표율, 평균 연령, 후보자별 득표율 그래프')
@@ -230,6 +236,9 @@ def page_2():
             st.experimental_rerun()
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
+            st.experimental_rerun()
+        if st.button("승민이의 생각"):
+            st.session_state.page = 'Page4'
             st.experimental_rerun()
 
     st.title('서울특별시 내 구별 평균 연령에 따른 주요 후보자의 득표율 산점도 및 추세선')
@@ -255,6 +264,9 @@ def page_3():
             st.experimental_rerun()
         if st.button("구별 행정동별 득표울"):
             st.session_state.page = 'Page3'
+            st.experimental_rerun()
+        if st.button("승민이의 생각"):
+            st.session_state.page = 'Page4'
             st.experimental_rerun()
 
     st.title('서울특별시 내 구별 투표율, 평균 연령, 후보자별 득표율 그래프')
@@ -294,6 +306,24 @@ def page_3():
     figure5(df[df['구'] == option]["구_eng"].item())
 
 def page_4():
+    with st.sidebar:
+        st.title("데이터 분석 결과 해석")
+        if st.button("홈으로 이동"):
+            st.session_state.page = 'Home'
+            st.experimental_rerun()
+        if st.button("구별 투표율, 평균 연령, 후보자별 득표율"):
+            st.session_state.page = 'Page1'
+            st.experimental_rerun()
+        if st.button("평균 연령에 따른 득표율 산점도 및 추세선"):
+            st.session_state.page = 'Page2'
+            st.experimental_rerun()
+        if st.button("구별 행정동별 득표울"):
+            st.session_state.page = 'Page3'
+            st.experimental_rerun()
+        if st.button("승민이의 생각"):
+            st.session_state.page = 'Page4'
+            st.experimental_rerun()
+            
     st.title('승민이의 생각')
     st.subheader('4.7. 하기 시러ㅓ')
     st.write('-'*50)
