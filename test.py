@@ -278,8 +278,8 @@ def page_3():
         'ScatterplotLayer',
         selected_district,
         get_position=['longitude', 'latitude'],
-        get_radius=200,
-        get_fill_color=[255, 0, 0, 140],
+        get_radius=1000,
+        get_fill_color=selected_district['color'].iloc[0],
         pickable=True
     )
 
