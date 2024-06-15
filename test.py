@@ -181,10 +181,10 @@ def page_home():
         """, unsafe_allow_html=True)
     st.title('4.7. 서울특별시장 보궐선거 결과 분석')
     figure1()
-    st.write('실제 데이터와 무관한 그래프입니다.')
+    st.write('4.7. 서울특별시장 선거 결과 상대적 우세 지역')
 
     with st.sidebar:
-        st.title("사이드바 제목 입력")
+        st.title("데이터 분석 결과 해석")
         if st.button("구별 투표율, 평균 연령, 후보자별 득표율"):
             st.session_state.page = 'Page1'
             st.experimental_rerun()
@@ -197,7 +197,7 @@ def page_home():
 
 def page_1():
     with st.sidebar:
-        st.title("사이드바 제목 입력")
+        st.title("데이터 분석 결과 해석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -218,7 +218,7 @@ def page_1():
 
 def page_2():
     with st.sidebar:
-        st.title("사이드바 제목 입력")
+        st.title("데이터 분석 결과 해석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
@@ -243,7 +243,7 @@ def page_2():
 
 def page_3():
     with st.sidebar:
-        st.title("사이드바 제목 입력")
+        st.title("데이터 분석 결과 해석")
         if st.button("홈으로 이동"):
             st.session_state.page = 'Home'
             st.experimental_rerun()
