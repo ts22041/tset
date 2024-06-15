@@ -26,7 +26,7 @@ districts_data = {
         "longitude": [127.0473, 127.0323, 126.9393, 126.9291, 127.0568, 127.1237, 127.0257, 126.8497,
                       126.9516, 127.0823, 126.8874, 126.8954, 127.0471, 127.0400, 126.9016, 126.9368,
                       127.0368, 127.0167, 127.1066, 126.8664, 126.8962, 126.9900, 126.9793, 126.9979, 127.0928],
-        "color": [red, red, alomost_red, blue, almost_blue, alomost_red, blue, almost_blue,
+        "color": [red, red, alomost_red, blue, almost_blue, red, blue, almost_blue,
                   almost_blue, almost_blue, almost_blue, blue, almost_blue, alomost_red, almost_blue, alomost_red,
                   red, almost_blue, red, alomost_red, alomost_red, red, alomost_red, alomost_red, almost_blue],
         "size": [1000] * 25
