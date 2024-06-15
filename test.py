@@ -8,6 +8,11 @@ import numpy as np
 voting_data = pd.read_csv('vote.csv')
 age_data = pd.read_csv('age.csv', encoding='utf-8')
 
+red = [230, 30, 43, 240]
+alomost_red = [230, 30, 43, 180]
+blue = [62, 77, 143, 240]
+almost_blue = [62, 77, 143, 180]
+
 districts_data = {
         "구": ["강남구", "서초구", "동작구", "은평구", "노원구", "강동구", "강북구", "강서구",
               "관악구", "광진구", "구로구", "금천구", "도봉구", "동대문구", "마포구", "서대문구",
@@ -21,8 +26,9 @@ districts_data = {
         "longitude": [127.0473, 127.0323, 126.9393, 126.9291, 127.0568, 127.1237, 127.0257, 126.8497,
                       126.9516, 127.0823, 126.8874, 126.8954, 127.0471, 127.0400, 126.9016, 126.9368,
                       127.0368, 127.0167, 127.1066, 126.8664, 126.8962, 126.9900, 126.9793, 126.9979, 127.0928],
-        "color": [[230, 30, 43, 180]] * 10 + [[62, 77, 143, 180]] * 7 + [[230, 30, 43, 240]] * 4 + [
-            [62, 77, 143, 240]] * 4,
+        "color": [red, red, alomost_red, blue, almost_blue, alomost_red, blue, almost_blue,
+                  almost_blue, almost_blue, almost_blue, blue, almost_blue, alomost_red, almost_blue, alomost_red,
+                  red, almost_blue, red, alomost_red, alomost_red, red, alomost_red, alomost_red, almost_blue],
         "size": [1000] * 25
     }
 df = pd.DataFrame(districts_data)
